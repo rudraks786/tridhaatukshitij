@@ -25,7 +25,12 @@ html {
   padding: 0;
   margin: 0;
   scroll-margin-top: 90px;
+}
 
+@media (max-width: 768px) {
+  * {
+    scroll-margin-top: 100px;
+  }
 }
 
 *, *:before, *:after {
@@ -2096,6 +2101,15 @@ a:hover {
   font-weight: 300;
   display: inline-block;
   line-height: 1;
+}
+
+.media-service .caption {
+  position: absolute;
+  bottom: 45px;
+  z-index: 1;
+  color: #ffffff;
+  margin-left: 15px;
+  font-size: 10px;
 }
 
 .media-service-2 {
@@ -5210,6 +5224,16 @@ button {
 /* ==========================================================================
    #HEADER
    ========================================================================== */
+.header--p65 {
+  padding: 0 65px;
+}   
+
+@media (max-width: 1519px) {
+  .header--p65 {
+    padding: 0;
+  }
+}
+
 .header__content {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5538,6 +5562,20 @@ button {
   padding: 17px 22px;
 }
 
+@media (max-width: 768px) {
+  .header--fixed--mobile-only {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.95);
+    z-index: 9999;
+  }
+}
+
 /* ==========================================================================
    #MENU
    ========================================================================== */
@@ -5563,6 +5601,12 @@ button {
   display: block;
   padding: 26px 22px;
   cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .menu-item a, .menu-item > span {
+    padding: 26px 20px;
+  }
 }
 
 .menu-item-has-children {
@@ -6219,6 +6263,12 @@ button {
   .section-pp.section-pp--pad {
     padding-top: 100px;
     padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  #section-0 {
+    margin-top: 97px;
   }
 }
 
@@ -7733,8 +7783,8 @@ button {
 
 .logo .logo-2 {
   border-left: 1px solid #666666;
-  padding-left: 10px;
-  margin-left: 10px;
+  padding-left: 20px;
+  margin-left: 20px;
   position: relative;
   display: inline-block;
 }
