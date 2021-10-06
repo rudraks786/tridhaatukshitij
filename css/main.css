@@ -2086,7 +2086,7 @@ a:hover {
 }
 
 .media-service .media__title .title a {
-  font-size: 18px;
+  font-size: 32px;
   color: #222;
   text-transform: uppercase;
 }
@@ -2096,7 +2096,7 @@ a:hover {
 }
 
 .media-service .media__title .number {
-  font-size: 72px;
+  font-size: 95px;
   color: #ebebeb;
   font-weight: 300;
   display: inline-block;
@@ -2450,6 +2450,15 @@ a:hover {
   padding-top: 62px;
 }
 
+.media-video {
+  background: #f8f8f8;
+	width: 100%;
+}
+
+.media-video img {
+	width: 100%;
+}
+
 .media-testi.light {
   background: #fff;
 }
@@ -2512,6 +2521,10 @@ a:hover {
 
 .media-testi .name a:hover {
   color: #666;
+}
+
+.vid-caption {
+  font-size: 13px;
 }
 
 .media-testi .job {
@@ -4267,6 +4280,10 @@ button {
 
 .media__text {
   margin-bottom: 0;
+}
+
+.con{
+font-size: 18px;
 }
 
 .media__link-overlay {
