@@ -913,6 +913,7 @@
 
 
 	$('.entry-image').zoom();
+	
     $('.header-nav-menu .menu-item > span').each(function(index) {
         const count = index;
         $(this).click(function() {
@@ -921,6 +922,8 @@
             element.scrollIntoView({behavior: "smooth"});
         })
     })
+	
+
 
     $('.header-nav-menu-mobile .menu-item > span').each(function(index) {
         const count = index;
@@ -954,8 +957,10 @@
     $('.media__form .close-btn').click(function() {
         $('.media__form').fadeOut();
     })
+	
 		
 })(jQuery);
+
 
 
 
