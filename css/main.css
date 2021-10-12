@@ -4757,6 +4757,7 @@ font-size: 18px;
  */
 .page-wrapper {
   overflow: hidden;
+	background-color: #000000;
 }
 
 .wrap {
@@ -5243,6 +5244,7 @@ font-size: 18px;
    ========================================================================== */
 .header--p65 {
   padding: 0 65px;
+	background: #ffffff;
 }   
 
 @media (max-width: 1519px) {
@@ -5571,7 +5573,7 @@ font-size: 18px;
   -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  background: rgba(255, 255, 255, 0.95);
+  background: #0c0c0d;
   z-index: 9999;
 }
 
@@ -5588,7 +5590,7 @@ font-size: 18px;
     -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-    background: rgba(255, 255, 255, 0.95);
+    background: #0c0c0d;
     z-index: 9999;
   }
 }
@@ -6682,7 +6684,8 @@ font-size: 18px;
 
 /* SLICK TESTI  */
 .slicker {
-  width: 100%;
+  width: 800px !important;
+	display: inline-block!important;
 }
 .slick-testi .slick-item {
   width: 50%;
