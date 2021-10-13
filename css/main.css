@@ -978,14 +978,14 @@ a:hover {
 }
 
 .media-about .tab-content--1 .media__img img {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 
 .media-about .tab-content--1 .media__img {
-  top: 30%;
+  top: 20%;
   position: relative;
-  transform: translateY(30%);
+  transform: translateY(20%);
 }
 
 .media-about .media__image {
@@ -3557,7 +3557,7 @@ a:hover {
 
 .title-1 {
   font-weight: 700;
-  font-size: 55px;
+  font-size: 38px;
   color: #ffffff;
   line-height: -webkit-calc(50/38);
   line-height: -moz-calc(50/38);
