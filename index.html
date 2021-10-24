@@ -46,6 +46,31 @@
     <link rel="apple-touch-icon" href="apple-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+	
+	<script src="js/jquery-3.6.0.js"></script>
+	
+	<script>
+		$(document).ready(function(){
+		$('#tab_cont2').css('display','none');	
+			
+    // Hide displayed paragraphs with different speeds
+    $(".tabbed1").click(function(){
+        $("#tab_cont1").show();
+		$("#tab_cont2").hide();		
+    	$(".tabbed1").addClass("actived");
+		$(".tabbed2").removeClass("actived");
+    });
+    
+    // Show hidden paragraphs with different speeds
+    $(".tabbed2").click(function(){
+        $("#tab_cont1").hide();
+		$('#tab_cont2').css('display','block');		
+	    $(".tabbed2").addClass("actived");
+		$(".tabbed1").removeClass("actived");
+
+    });
+});
+</script>
 </head>
 
 <body class="animsition js-preloader">
@@ -184,37 +209,37 @@
                     <div class="rev_slider fullwidthabanner js-rev" data-version="5.4.4" style="display:none" data-rev-layout="fullscreen" data-rev-stylearrow="au-rev-arrow-1" data-rev-bullets="true" data-rev-stylebullet="au-rev-bullet-1" data-rev-voffbullet="55">
                         <ul>
                             <li class="rev-item rev-item-1" data-transition="crossfade">
-                                <img class="rev-slidebg" src="images/banners/Hero-Banner-01.jpg" alt="Master Slider 01" />
-                                <h4 class="tp-caption tp-resizeme rev-text-1" data-frames="[{&quot;delay&quot;:0,&quot;speed&quot;:1800,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:800,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
+                                <img class="rev-slidebg" src="images/banners/Hero-Banner-01.jpg" alt="Master Slider 01" style="top:100px;" />
+<!--                                <h4 class="tp-caption tp-resizeme rev-text-1" data-frames="[{&quot;delay&quot;:0,&quot;speed&quot;:1800,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:800,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
                                 data-x="['left']" data-y="['middle']" data-hoffset="[0, 0, 0, 0, 0]" data-voffset="[-118, -118, -70, -80, -80]" data-paddingleft="[0, 0, 0, 0, 15]" data-paddingright="[0, 0, 0, 0, 15]" data-width="['auto']" data-height="[&quot;auto&quot;]"
                                 data-whitespace="[nowrap, nowrap, nowrap, nowrap, nowrap]" data-color="#F89A28" data-fontweight="400" data-fontsize="[11, 11, 18, 20, 20]" data-textalign="[left, left, left, center, center]">Launching Kshitij Tower 2</h4>
                                 <h2 class="tp-caption tp-resizeme rev-text-2" data-frames="[{&quot;delay&quot;:800,&quot;speed&quot;:2100,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:800,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
                                 data-x="[left]" data-y="[center]" data-hoffset="[0, 0, 0, 0, 0]" data-voffset="[-35, -30, 15, 10, 10]" data-paddingleft="[0, 0, 0, 0, 15]" data-paddingright="[0, 0, 0, 0, 15]" data-width="[600,600,500,576,500]" data-height="[&quot;auto&quot;]"
-                                data-lineheight="[44, 44, 44, 44, 44]" data-whitespace="normal" data-color="#fff" data-fontweight="400" data-fontsize="[38, 38, 38, 38, 38]" data-textalign="[left, left, left, left, left]">The corner office has <br> finally found a home to match</h2>
+                                data-lineheight="[44, 44, 44, 44, 44]" data-whitespace="normal" data-color="#fff" data-fontweight="400" data-fontsize="[38, 38, 38, 38, 38]" data-textalign="[left, left, left, left, left]">The corner office has <br> finally found a home to match</h2>-->
                                
                             </li>
                             <li class="rev-item rev-item-1" data-transition="slotslide-horizontal">
                                 <img class="rev-slidebg" src="images/banners/Hero-Banner-02.jpg" alt="Master Slider 01" />
-                                <h4 class="tp-caption tp-resizeme rev-text-1" data-frames="[{&quot;delay&quot;:0,&quot;speed&quot;:1800,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:800,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
+<!--                                <h4 class="tp-caption tp-resizeme rev-text-1" data-frames="[{&quot;delay&quot;:0,&quot;speed&quot;:1800,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:800,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
                                 data-x="['left']" data-y="['middle']" data-hoffset="[0, 0, 0, 0, 0]" data-voffset="[-118, -118, -70, -80, -80]" data-paddingleft="[0, 0, 0, 0, 15]" data-paddingright="[0, 0, 0, 0, 15]" data-width="['auto']" data-height="[&quot;auto&quot;]"
                                 data-whitespace="[nowrap, nowrap, nowrap, nowrap, nowrap]" data-color="#F89A28" data-fontweight="400" data-fontsize="[11, 11, 18, 20, 20]" data-textalign="[center, center, center, center, center]">Launching Kshitij Tower 2</h4>
                                 <h2 class="tp-caption tp-resizeme rev-text-2" data-frames="[{&quot;delay&quot;:800,&quot;speed&quot;:2100,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:800,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
                                 data-x="[left]" data-y="[center]" data-hoffset="[0, 0, 0, 0, 0]" data-voffset="[-35, -30, 15, 10, 10]" data-paddingleft="[0, 0, 0, 0, 15]" data-paddingright="[0, 0, 0, 0, 15]" data-width="[600,600,500,576,500]" data-height="[&quot;auto&quot;]"
                                 data-lineheight="[47, 47, 47, 47, 47]" data-whitespace="normal" data-color="#fff" data-fontweight="400" data-fontsize="[38, 38, 38, 38, 38]" data-textalign="[left, left, left, left, left]">
                                 Discreet. Private. Limited.<br> Luxury speaks a new language.
-                                </h2>
+                                </h2>-->
                             
                             </li>
                             <li class="rev-item rev-item-1" data-transition="papercut">
                                 <img class="rev-slidebg" src="images/banners/Hero-Banner-03.jpg" alt="Master Slider 01" />
-                                <h4 class="tp-caption tp-resizeme rev-text-1" data-frames="[{&quot;delay&quot;:0,&quot;speed&quot;:1800,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:800,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
+<!--                                <h4 class="tp-caption tp-resizeme rev-text-1" data-frames="[{&quot;delay&quot;:0,&quot;speed&quot;:1800,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:800,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
                                 data-x="['left']" data-y="['middle']" data-hoffset="[0, 0, 0, 0, 0]" data-voffset="[-118, -118, -70, -80, -80]" data-paddingleft="[0, 0, 0, 0, 15]" data-paddingright="[0, 0, 0, 0, 15]" data-width="['auto']" data-height="[&quot;auto&quot;]"
                                 data-whitespace="[nowrap, nowrap, nowrap, nowrap, nowrap]" data-color="#F89A28" data-fontweight="400" data-fontsize="[11, 11, 18, 20, 20]" data-textalign="[left, left, left, center, center]">Launching Kshitij Tower 2</h4>
 								
 								
                                 <h2 class="tp-caption tp-resizeme rev-text-2" data-frames="[{&quot;delay&quot;:800,&quot;speed&quot;:2100,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:800,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
                                 data-x="[left]" data-y="[center]" data-hoffset="[0, 0, 0, 0, 0]" data-voffset="[-35, -30, 15, 10, 10]" data-paddingleft="[0, 0, 0, 0, 15]" data-paddingright="[0, 0, 0, 0, 15]" data-width="[600,600,500,576,500]" data-height="[&quot;auto&quot;]"
-                                data-lineheight="[44, 44, 44, 44, 44]" data-whitespace="normal" data-color="#fff" data-fontweight="400" data-fontsize="[38, 38, 38, 38, 38]" data-textalign="[left, left, left, left, left]">Redefine your social networth</h2>
+                                data-lineheight="[44, 44, 44, 44, 44]" data-whitespace="normal" data-color="#fff" data-fontweight="400" data-fontsize="[38, 38, 38, 38, 38]" data-textalign="[left, left, left, left, left]">Redefine your social networth</h2>-->
                                
                             </li>
 <!--                            <li class="rev-item rev-item-1" data-transition="papercut">
@@ -370,9 +395,27 @@
                         <h5 class="title-sub">Kshitij</h5>
                         <h2 class="title-construction">Construction Progress</h2>
                     </div>
+					<div class="row gutter-xl">
+					<div class="col-lg-2">
+					<div class="tabbed1"></div>
+					<div class="cap">WING A</div>
+          			</div>
+					<div class="col-lg-2">
+					<div class="tabbed2"></div>
+					<div class="cap">WING B</div>
+          			</div>
 					<div class="col-lg-7">
-
-          		</div>
+					<section class="slider" id="tab_cont1">
+  					<div><img src="images/2.jpg" alt=""/></div>
+  					<div><img src="images/3.jpg" alt=""/></div>
+					</section>
+					<section class="slider" id="tab_cont2">
+  					<div><img src="images/1.jpg" alt=""/></div>
+					<div><img src="images/2.jpg" alt=""/></div>	
+					</section>					
+          			</div>						
+						
+					</div>	
                 </div>
             </section>		
 		
@@ -627,9 +670,17 @@
                     <div class="section-title">
                         <h2 class="title-contact">Contact</h2>
                     </div>
-                    <div class="row">
+                    <div class="row medium_light_white">
 						<div class="col-lg-6">
-						<h2>LOCATION CONNECTIVITY</h2>
+						<h2>LOCATION CONNECTIVITY</h2><br>
+						<p class="LandingPage-SubTitle" style="font-size: 16px;">kshitij is heart of matunga west in close proximity to all lifestyle needs.<br>
+						Driving time from Kshitij to<br>
+						<span>Bombay Scottish School - 5 mins</span> | <span>Hinduja Hospital - 5 mins</span><br>
+						<span>Shivaji Park - 5 mins</span> | <span>Lower Parel - 9 mins</span><br>
+						<span>High Street Phoenix- 9 mins</span> | <span>Eastern Express Highway - 10 mins</span><br>
+						<span>Western Express Highway - 10 mins</span> | <span>Bandra Worli Sea Link - 10 mins</span><br>
+						<span>Bandra Kurla Complex- 15 mins</span>							
+						</p>	
 						</div>	
 						
                         <div class="col-lg-6">

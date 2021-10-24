@@ -17,3 +17,20 @@ $(document).ready(function() {
 function pauseslider() { $("#video-slider").flexslider("pause"); }
 function playslider() { $("#video-slider").flexslider("play"); }
 function resumeslider() { $("#video-slider").flexslider("next"); $("#video-slider").flexslider("play"); }
+
+$(()=>{
+  var createSlick = ()=>{
+    let slider = $(".slider");
+
+    slider.not('.slick-initialized').slick({
+      autoplay: false,
+      infinite: false,
+      dots: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+	  arrows:false
+    });	
+  }
+
+  createSlick();
+})
