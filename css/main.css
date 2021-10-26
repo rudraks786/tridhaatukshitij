@@ -499,7 +499,7 @@ button {
  */
 html, body {
   background: #000000;
-  color: #555;
+  color: #8d8c8c;
   font-family: "Poppins", Arial, "Helvetica Neue", sans-serif;
   font-size: 13px;
   line-height: 2.3076923077;
@@ -683,7 +683,7 @@ a:hover {
   display: block;
   padding: 0 10px;
   font-size: 13px;
-  color: #333;
+   color: #8d8c8c;
 }
 
 .list-social__item a i {
@@ -5731,6 +5731,10 @@ font-size: 18px;
 	color: #e99f45;
 }
 
+.menu-item a, .menu-item .active {
+	color: #e99f45;
+}
+
 @media (max-width: 1200px) {
   .menu-item a, .menu-item > span {
     padding: 26px 20px;
@@ -6197,7 +6201,7 @@ font-size: 18px;
 }
 
 .page-info.light .list-social-3 .list-social__item a {
-  color: #222;
+  color: #8d8c8c;
 }
 
 .page-info.light .list-social-3 .list-social__item .icon {
@@ -16900,6 +16904,7 @@ button:focus {
 	height: 400px;	
 	background-image:url("../images/tab1.png")
 }
+
 
 
 

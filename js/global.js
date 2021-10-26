@@ -958,6 +958,16 @@
         $('.media__form').fadeOut();
     })
 	
+  $('.header-nav-menu .menu-item > span').click(function(){
+    $('.header-nav-menu .menu-item > span').removeClass("active");
+    $(this).addClass("active");
+});
+	
+    var pdfUrl = "../images/Ebrochure.pdf";
+
+    $('#SampleForm').on('submit', function () {
+        window.open(pdfUrl, '_blank');
+    });	
 		
 })(jQuery);
 
