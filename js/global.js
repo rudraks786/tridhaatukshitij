@@ -963,7 +963,7 @@
     $(this).addClass("active");
 });
 	
-    var pdfUrl = "../images/Ebrochure.pdf";
+    var pdfUrl = "https://github.com/rudraks786/tridhaatukshitij/blob/master/images/Ebrochure.pdf";
 
     $('#SampleForm').on('submit', function () {
         window.open(pdfUrl, '_blank');
